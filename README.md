@@ -1,1 +1,226 @@
-# Accessible-Blog
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Blog Post - Perceivable Principle</title>
+
+  <style>
+    :root {
+      --primary-color: #004d40;
+      --secondary-color: #00796b;
+      --accent-color: #0288d1;
+      --bg-color: #f9f9f9;
+      --text-color: #1a1a1a;
+      --contrast-color: #ffffff;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--contrast-color);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--contrast-color);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2, h3 {
+      color: var(--secondary-color);
+    }
+
+    .features-list {
+      background: #e0f2f1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .features-list ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    form {
+      background-color: #e0f2f1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--secondary-color);
+      color: var(--contrast-color);
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+<a href="#home" class="skip-link">Skip to main content</a>
+
+<header>
+  <h1>Accessible Blog</h1>
+  <p>Applying the <strong>Perceivable Principle</strong> of WCAG</p>
+</header>
+<img src>
+
+<nav aria-label="Main navigation">
+  <a href="#home">Home</a>
+  <a href="#articles">Articles</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+  
+  <!-- HOME -->
+  <section id="home">
+    <h2>Welcome to Our Accessible Blog</h2>
+    <p>This website was built following the <strong>Perceivable</strong> principle of WCAG, ensuring all users can access and understand content.</p>
+
+    <img src="img/jpeg.png" alt="Illustration promoting accessible design.">
+
+    <div class="features-list">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Group and Personal Training</li>
+        <li>Online Learning</li>
+        <li>Accessibility Optimization</li>
+        <li>Easy Read Support Materials</li>
+      </ul>
+    </div>
+  </section>
+  <img src="jpeg.png" alt=""> 
+
+  <!-- ARTICLES -->
+  <section id="articles">
+    <h2>Featured Article</h2>
+    <h3>The Beauty of Accessible Web Design</h3>
+    <p>The article explains why web accessibility is important. It says that websites should be designed so everyone can use them, including people with disabilities. By using readable text, good color contrast, alt text for images, and simple navigation, we make the web easier and fair for all users. Accessible design is not just a rule to follow, but a way to include and respect everyone online..</p>
+
+
+    
+  
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About This Blog</h2>
+    <p>This blog is dedicated to promoting awareness and proper implementation of accessibility in modern web design and development.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>You may send us an email below:</p>
+
+    <form action="mailto:accessibleblog@gmail.com" method="post" enctype="text/plain">
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+
+      <label>Your Email</label>
+      <input type="email" name="email" required>
+
+      <label>Your Message</label>
+      <textarea name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Inclusive Web Blog | WCAG Accessible Design
+</footer>
+
+</body>
+</html>
